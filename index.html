@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<head>
+		<meta charset="UTF-8">
+		<meta content="Welcome to Fly To The Limit Queenstown. For adventure activities in and around the Queenstown area contact us or make a booking today." name="description">
+		<title>Fly to the Limit</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+	</head>
+
+	<body id="top">
+		<!-- Navigation and logo - ALWAYS visible -->
+		<header>
+			<a href="#top">
+				<img src="assets/logo/finallogo.gif" alt="Fly to the Limit Logo" class="left" id="logo">
+			</a>
+
+			<div class="right">	
+				<button class="left" id="bookPopUp2">Book now.</button>
+				<nav class="left">
+					<ul>
+						<li class="left borderRight">
+							<a href="#top">Home</a>
+						</li>
+
+						<li class="left borderRight">
+							<a href="#flights">Our Flights</a>
+						</li>
+
+						<li class="left borderRight">
+							<a href="#about">About Us</a>
+						</li>
+
+						<li class="left noBorder">
+							<a href="#contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- HOME -->
+		<div id="home" class="cf">
+			<div class="homeInfo one">
+				<h2>Don't you wish you were here?</h2><br>
+			</div>
+			<div class="homeInfo two">
+				<h2>What are you waiting for?</h2>
+			</div>
+				<br><br>
+			<div class="homeInfo three"> 
+                   <!-- <button id="letsGo"><a href="#flights"></a></button> --><a class="letsGo" href="#flights">Let's Go.</a><a class="letsGo" href="#flights">Let's Go.</a>
+			</div>
+		</div> <!-- end of HOME -->
+
+		<!-- FLIGHTS -->
+		<div id="flights">
+			<div class="left">
+				<h2>Our flights.</h2>
+
+				<p>
+					We offer a range of flight packages. From gliding over the lake to doing air acrobatics in our stunt plane, we cater to anyone and everyone 
+					looking to experience the spectacular views.
+					<br><br>
+					If your an avid or keen tramper we also offer a pick up and drop off service around the area so you can explore of the many tramping routes in the area.
+				</p>
+
+				<button id="flightPopUp">Flight packages.</button>
+				<button id="planePopUp">Our planes.</button>
+			</div>
+			<div class="right"></div>
+		</div> <!-- end of FLIGHTS -->
+
+		<!-- ABOUT -->
+		<div id="about" class="cf">
+			<div class="left"></div> <!-- image div -->
+			
+			<div class="right">
+				<h2>Get to know us.</h2>
+
+				<p>
+					We’re a small independent business, passionate about sharing the beautiful South Island in a new and spectacular way through our scenic flights.
+					<br><br>
+					We have been flying for over 20 years which has given us the time to find the most beautiful scenic views plus we have the reputation to back it up.
+					<br><br>
+					All our staff are highly experienced and own the craft that they fly. Please take your time getting to know our staff so you are assured that you are in professional and safe hands.
+				</p>
+
+				<button id="aboutPopUp">Meet the team.</button>
+				<button id="galleryPopUp">Photos.</button>
+			</div>
+		</div> <!-- end of ABOUT -->
+
+		<!-- CONTACT -->
+		<div id="contact" class="cf">
+			<div class="left">	
+				<h2>Let's talk.</h2>
+
+				<p>
+					We're located in Wanaka and Queenstown, dedicated to giving you the best South Island experience. Please get in touch with us if you have any questions. We hope to be a part of your experience.
+					<br>
+					<br>
+					Ph: 03 123 4566
+					<br>
+					Email: hello@flytothelimit.co.nz
+					<br>
+					<br>
+					Office: 1 Queenstown Street, Queenstown
+					<br>
+					Hanger and Airfield: 1 Wanaka Street, Wanaka
+					<br>
+					<br>
+					Or find us on social media:
+				</p>
+
+
+
+					<ul>
+						
+							<li>
+								<a href="http://www.facebook.com">
+								<img src="assets/Icons/Facebook.png" alt="Facebook" >
+								</a>
+							</li>
+							<li>
+								<a href="http://www.youtube.com">
+								<img src="assets/Icons/Youtube.png" alt="Twitter">
+								</a>
+							</li>
+							<li>
+								<a href="http://www.instagram.com">
+								<img src="assets/Icons/Instagram.png" alt="Instagram" >
+								</a>
+							</li>
+						
+					</ul>
+				<p></p>
+
+				<button id="bookPopUp">Book now.</button>
+			</div>
+			<div class="right"></div>
+		</div> <!-- end of CONTACT -->
+
+
+		<!-- POP UP SCREENS -->
+
+		<!-- Flight Packages Pop Up-->
+		<div id="flight_popUp" class="hide">
+			<div class="content cf">
+				<button id="close_flight" class="right close">X</button>
+
+				<div id="mainPhoto_flight" class="left mainPhoto">
+					<img src="assets/flights/flight_1.jpg" alt="Flight Packages description image" class="left" id="img01_flight">
+				</div>
+
+				<div id="mainInfo_flight" class="left mainInfo">
+					<h3>Scenic Flight</h3>
+
+					<p>
+						The scenic flight takes you over the breath taking views of the mountain ranges of the deep south. Avalible in either 1 or 2 hour flights, this is one flight that will leave you speechless.
+					</p>
+
+					<ul>
+						<li>1 hour - $350 per passenger</li>
+						<li>2 hours - $650 per passenger</li>
+					</ul>
+
+					<button id="scenicBook" class="bookPopUpBtn">
+						Book now.
+					</button>
+				</div>
+
+				<div class="thumbs" id="flightThumbs">
+					<img src="assets/flights/flight_1.jpg" alt="Flight Packages description image" class="left" id="img1_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_2.jpg" alt="Flight Packages description image" class="left" id="img2_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_3.jpg" alt="Flight Packages description image" class="left" id="img3_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_4.jpg" alt="Flight Packages description image" class="left" id="img4_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_5.jpg" alt="Flight Packages description image" class="left" id="img5_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_6.jpg" alt="Flight Packages description image" class="left" id="img6_flight" height="67" width="100">
+					
+					<img src="assets/flights/flight_7.jpg" alt="Flight Packages description image" class="left" id="img7_flight" height="67" width="100">
+
+					<img src="assets/flights/flight_8.jpg" alt="Flight Packages description image" class="left" id="img8_flight" height="67" width="100">
+					<ul class="cf">
+						<li>Scenic Flights</li>
+						<li>Mountain Flights</li>
+						<li>Lake Trips</li>
+						<li>Photographic</li>
+						<li>Charter Trips</li>
+						<li>Tramping</li>
+						<li>Custom</li>
+						<li>Questions?</li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- End of Flight Packages -->
+
+		<!-- Plane Info Pop Up-->
+		<div id="plane_popUp" class="hide">
+			<div class="content">
+				<button id="close_plane" class="right close">X</button>
+
+				<div id="mainPhoto_plane" class="left mainPhoto">
+					<img src="assets/planes/plane_1.jpg" alt="plane info description image" class="left" id="img01_plane">
+				</div>
+
+				<div id="mainInfo_plane" class="left mainInfo">
+					<h3>The Amphibian</h3>
+					<p>
+						An amphibious aircraft or amphibian is an aircraft that can take off and land on both land and water. Fixed-wing amphibious aircraft are seaplanes (flying boats and floatplanes) that are equipped with retractable wheels, at the expense of extra weight and complexity, plus diminished range and fuel economy compared to planes designed for land or water only.
+					</p>
+				</div>
+
+				<div class="thumbs" id="planeThumbs">
+					<img src="assets/planes/plane_1.jpg" alt="plane info description image" class="left" id="img1_plane" height="43" width="100">
+
+					<img src="assets/planes/plane_2.jpg" alt="plane info description image" class="left" id="img2_plane" height="43" width="100">
+
+					<img src="assets/planes/plane_3.jpg" alt="plane info description image" class="left" id="img3_plane" height="43" width="100">
+
+					<img src="assets/planes/plane_4.jpg" alt="plane info description image" class="left" id="img4_plane" height="43" width="100">
+
+					<img src="assets/planes/plane_5.jpg" alt="plane info description image" class="left" id="img5_plane" height="43" width="100">
+
+					<img src="assets/planes/plane_6.jpg" alt="plane info description image" class="left" id="img6_plane" height="43" width="100">
+
+					<ul class="cf">
+						<li>The Amphibian</li>
+						<li>The Glider</li>
+						<li>The Stunt Plane</li>
+						<li>The Sky Hawk</li>
+						<li>The Scenic</li>
+						<li>The Helicopter</li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- End of Plane Info -->
+
+		<!-- About Pop Up -->
+		<div id="about_popUp" class="hide">
+			<div class="content">
+				<button id="close_about" class="right close">X</button>
+
+				<div id="mainPhoto_about" class="left mainPhoto">
+					<img src="assets/teamphotos/about_1.jpg" alt="About description image" class="left" id="img01_aboutUs">
+				</div>
+
+				<div id="mainInfo_aboutUs" class="left mainInfo">
+					<h3>Olga and Bruce McKenzie</h3>
+					<p>
+						The owners, Olga and Bruce McKenzie. Both born in Southland, travelled extensively, both have a commercial pilots licenses with 19 and 9 years respectively flying for Middle eastern airlines.<br><br>They own and operate a Cessna Caravan Amphibian which can take up to 7 people to any remote lake in the area. They also own a DG Flugzeugbau DG-­‐1001S with a Cessna Turbo Stationair to tow it. The Cessna is also available for custom scenic tours
+					</p>
+				</div>
+
+				<div class="thumbs" id="aboutThumbs">
+					<img src="assets/teamphotos/about_1.jpg" alt="About description image" class="left" id="img1_aboutUs" height="43" width="100">
+
+					<img src="assets/teamphotos/about_2.jpg" alt="About description image" class="left" id="img2_aboutUs" height="43" width="100">
+
+					<img src="assets/teamphotos/about_3.jpg" alt="About description image" class="left" id="img3_aboutUs" height="43" width="100">
+
+					<img src="assets/teamphotos/about_4.jpg" alt="About description image" class="left" id="img4_aboutUs" height="43" width="100">
+
+					<img src="assets/teamphotos/about_5.jpg" alt="About description image" class="left" id="img5_aboutUs" height="43" width="100">
+					<ul class="cf">
+						<li>Olga and Bruce</li>
+						<li>Finn</li>
+						<li>Wendy</li>
+						<li>John</li>
+						<li>Hans</li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- End of About -->
+
+		<!-- Gallery Pop Up -->
+		<div id="gallery_popUp" class="hide">
+			<div class="content">
+				<button id="close_gallery" class="right close">X</button>
+
+				<div id="mainPhoto_gallery" class="left mainPhoto">
+					<img src="assets/photogallery/gallery_01.jpg" alt="gallery description image" class="left" id="img1_gallery">
+				</div>
+
+				<div class="mainInfo" id="thumbs">
+					<img src="assets/photogallery/gallery_01.jpg" alt="gallery description image" class="left" id="img01_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_02.jpg" alt="gallery description image" class="left" id="img02_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_03.jpg" alt="gallery description image" class="left" id="img03_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_04.jpg" alt="gallery description image" class="left" id="img04_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_05.jpg" alt="gallery description image" class="left" id="img05_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_06.jpg" alt="gallery description image" class="left" id="img06_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_07.jpg" alt="gallery description image" class="left" id="img07_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_08.jpg" alt="gallery description image" class="left" id="img08_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_09.jpg" alt="gallery description image" class="left" id="img09_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_10.jpg" alt="gallery description image" class="left" id="img10_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_11.jpg" alt="gallery description image" class="left" id="img11_gallery" height="43" width="100"
+					>
+
+					<img src="assets/photogallery/gallery_12.jpg" alt="gallery description image" class="left" id="img12_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_13.jpg" alt="gallery description image" class="left" id="img13_gallery" height="43" width="100">
+
+					<img src="assets/photogallery/gallery_14.jpg" alt="gallery description image" class="left" id="img14_gallery" height="43" width="100">
+				</div>
+			</div>
+		</div> <!-- End of gallery -->
+
+<!-- Booking Pop Up -->
+
+<div id="booking_popUp" class="hide">
+			<div class="content cf">
+				<button id="close_booking" class="right close">X</button>
+				<div id="form" class="cf">
+					<h2 class="left">Adventure Awaits</h2>
+
+					<form class="cf" id="contact-form" method="post" action="#">
+					
+	<div class="left">
+		<div class="form-group">	
+			<label for="firstname">First Name</label>
+			<input id="firstname" name="firstname" type="text" required minlength="2" placeholder="John">
+			<div id="firstname-error"></div>
+		</div>
+		<div class="form-group">
+			<label for="lastname">Last Name</label>
+			<input id="lastname" name="lastname" type="text" required minlength="2" placeholder="Doe">
+			<span id="lastname-error"></span>
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" minlength="6" required placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+			<span id="password-error"></span>
+		</div>
+		<div class="form-group">
+			<label for="password2">Confirm Password</label>
+			<input id="password2" name="password2" type="password" required data-fv-match="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+			<span id="password2-error"></span>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" required placeholder="example @ mail.com">
+			<span id="email-error"></span>
+		</div>
+	</div>
+	<div class="right">
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea id="message" name="message" rows="8" cols="60" required minlength="10" placeholder="Please enter your message here."></textarea>
+			<span id="message-error"></span>
+		</div>
+		<div class="form-group">
+			<label for="location">Location</label>
+			<select id="location" name="location" required>
+				<option value="">-- Pick a location --</option>
+				<option value="nz">Queenstown</option>
+				<option value="au">Wanaka</option>
+			</select>
+			<span id="location-error"></span>
+		</div>
+		<div class="form-group">
+			<label for="agree">
+				<input id="agree" name="agree" type="checkbox" required>
+				I agree to the terms and conditions.
+			</label>
+			<span id="agree-error"></span>
+		</div>
+	</div>
+		<div class="form-group">
+			<!-- <button id="submit-button" type="submit" class="submit left cf" disabled="">Submit Message</button>		 -->
+			<input type="submit" class="submit left cf" id="submit-button" value="Submit Message">
+		</div>
+						
+					</form> <!-- end of form -->
+				</div> <!-- end of div holding form -->
+
+			</div> <!-- end of content -->
+		</div> <!-- end of booking -->
+		<script src="js/script.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+
+				addFormValidation(document.querySelector('#contact-form'));
+
+			}); 
+		</script>
+
+
+</body>
+</html>

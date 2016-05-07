@@ -1,0 +1,740 @@
+/****************************************
+
+RESETS
+
+****************************************/
+
+*{
+	text-decoration: none;
+	list-style: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.cf{
+	clear: both;
+}
+
+.cf:before, .cf:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
+
+/****************************************
+
+BASIC ANIMATION HOME SCREEN
+
+****************************************/
+
+/*
+*CSS3 Fade in Animation on Page Load 
+*Alex , Fabric Eleven
+*https://fabriceleven.com/design/creating-fancy-css3-fade-in-animations-on-page-load/*/
+
+
+/* make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.homeInfo {		
+	opacity:0;  						   /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.homeInfo.one {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.homeInfo.two {
+-webkit-animation-delay: 3s;
+-moz-animation-delay:3s;
+animation-delay: 3s;
+}
+
+.homeInfo.three {
+-webkit-animation-delay: 5s;
+-moz-animation-delay: 5s;
+animation-delay: 5s;
+}
+
+
+
+/****************************************
+
+FONTS
+
+****************************************/
+
+h1, h2, h3, h4, h5, h6					 
+			{font-family: 'Roboto Slab', serif;}
+
+
+
+p, button, span, .submit, .submitTrue, .fail, #flight_popUp .thumbs ul li, #plane_popUp .thumbs ul li, #about_popUp .thumbs ul li, .letsGo
+			{font-family: 'Roboto Slab', serif;}
+
+
+legend,label , textarea 
+			{font-family: 'Lucida Sans Unicode', "Lucida Grande", sans-serif;}
+
+
+#home .homeInfo.one h2
+	{	font-size: 300%;
+		text-align: center;
+		margin-top: 20%;
+	}
+#home .homeInfo.two h2
+	{	font-size: 300%;
+		text-align: center;
+	}
+
+.homeInfo.three a 
+	{
+		font-size: 125%;
+	}
+
+h2			
+	{	font-size: 250%; }
+
+h3				
+	{	font-size: 150%; }
+
+ .mainInfo p, .mainInfo ul, header .right nav li a, header .right nav li a	
+	{	font-size: 90%;  }
+
+.mainInfo #comments, button
+	{	font-size: 80%;  }
+
+span, #flight_popUp .thumbs ul li, #plane_popUp .thumbs ul li, #about_popUp .thumbs ul li, label, textarea, input#name
+	{	font-size: 70%;  }
+
+h5																				
+	{	font-size: 60%;  }
+
+header .right nav li a
+{
+	font-family: 'Roboto Slab', serif;
+}
+
+
+/****************************************
+
+COLOURS
+
+Colour Scheme:
+
+
+****************************************/
+
+/* BACKGROUND COLOURS */
+#flights, #about, #contact, .thumbs,  #gallery_popUp .mainInfo 	
+														{	background-color: #f0eef3; /* WHITE */	}
+button, #flight_popUp .thumbs ul, #plane_popUp .thumbs ul,.submit, #about_popUp .thumbs ul, .submitTrue, .letsGo						
+														{	background-color: #d94e37; /* Red */	}
+.fail 											{	background-color: #8c95a4; /* GREY */ }
+input, textarea, select#location 						{	background-color: #606755; /* green */}
+button:hover,.submitTrue:hover,.letsGo:hover 			{ 	background-color: #718158; /* Pale green */}
+button#bookPopUp2.left:hover 							{ 	background-color: #4F5A3D; /* Pale green */}
+header 													{	background-color: rgba(113, 129, 88, 0.8); /* PALE GREEN */ }
+.show													{	background-color: rgba(113, 129, 88, 0.7);  /* WHITE - GRAY*/ }
+
+
+/* FONT COLOURS */
+button, h5, ul li a, button a, .submit, .fail, #flight_popUp .thumbs ul li, #plane_popUp .thumbs ul li, #about_popUp .thumbs ul li, .submitTrue, .letsGo, input, textarea, select#location
+													{	color: #f0eef3; /* WHITE */	}
+h3, .success, h2									{	color: #8c95a4;	/* GREY */	}
+ .homeInfo.one h2, .homeInfo.two h2				{	color: #000A00; /* WHITE */	}
+.submitTrue:hover									{	color: #072326; /* GREEN */ }	
+p 													{	color: #000000; /* BLACK*/ } 
+legend												{	color: #d94e37; /* Red */	}
+
+/****************************************
+
+COMMON CLASSES AND PROPERTIES
+
+****************************************/
+
+.right 		{	float: right; }
+.left 		{ 	float: left; }
+.noBorder 	{	border: none; }
+.hide 		{	display: none; }
+
+button, header .right nav li a, input[type="number"]{
+	text-align: center;
+}
+
+html, body, #home, #flights, #about, #contact, .mainPhoto img,  #flights .right,  #about .left,  #contact .right, .show, .mainPhoto{
+	height: 100%;
+}
+
+header, #home, #contact, .show, .thumbs, .mainInfo form{
+	width: 100%;
+
+}
+
+header, .close, .submit, .submitTrue{ 
+	z-index: 100; 
+}
+
+.content, .thumbs, .mainPhoto{
+	position: absolute;
+}
+
+header, .show{
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+
+/****************************************
+
+BUTTONS
+
+****************************************/
+
+button {
+	padding: 0.5em 1em 0.5em 1em;
+
+}
+
+.homeInfo.three {
+    text-align: center;
+}
+
+ .letsGo {
+    padding: 0.5em 6em 0.5em 6em; /*top , right , bottom , left*/
+}
+
+
+
+
+
+/****************************************
+
+POSITIONING AND LAYOUT
+
+****************************************/
+
+
+/*			HEADER AND NAVIGATION 			*/
+
+header{
+	padding: 1em 3em;
+}
+
+header img{
+	height: 3.25em;
+	margin-left: 3em;
+}
+
+header .right{
+	margin-top: 1.25em;
+}
+
+header .right button{
+	margin-right: 1.5em;
+}
+
+header .right nav{
+	margin-top: 0.25em;
+}
+
+header .right .borderRight{
+	border-right: solid thin #f0eef3; /* WHITE */
+}
+
+header .right nav li a{
+	padding: 0.5em 1em;
+}
+
+header .right nav li a:hover{
+	text-decoration: underline;
+}
+
+
+/*			HOME 			*/
+
+/*	HOME IMAGE */
+
+
+
+#home{
+	background: url("../assets/home/home.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+/*	-moz-background-size: cover;*/
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/*			HEADING AND PARAGRAPHS LAYOUT FOR FLIGHTS, ABOUT AND CONTACT			*/
+
+ #flights .left,  #about .right,  #contact .left {
+	width: 40%;
+	padding: 0 10px 0 10px;
+}
+
+ #flights .left h2,  #about .right h2,  #contact .left h2{
+	margin-bottom: 0.25em;
+	margin-top: 3em;
+}
+
+ #flights .left p,  #about .right p,  #contact .left p, .mainInfo p, .bookPopUpBtn{
+	margin-left: 4em;
+	margin-bottom: 1.5em;
+}
+
+ #flights .left button:first-of-type,  #about .right button:first-of-type,  #contact .left button{
+	margin-left: 5em;
+}
+
+.mainInfo ul{
+	margin-left: 4em;
+}
+
+
+/*			IMAGES 			*/
+
+ #flights .right{
+	background: url("../assets/home/ourflights.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+/*	-moz-background-size: cover;*/
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+ #about .left{
+	background: url("../assets/home/aboutus.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+/*	-moz-background-size: cover;*/
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+ #contact .right{
+	background: url("../assets/home/contact.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+/*	-moz-background-size: cover;*/
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* IMAGE LAYOUT AND SIZING */
+ #flights .right,  #about .left,  #contact .right{
+	width: 60%;
+}
+
+
+/* CONTACT SOCIAL LINKS */
+
+
+#contact ul li {
+	position: relative;
+	display: inline-block;
+	margin-left: 4em;
+	width: 0px;
+
+}
+
+
+
+
+/*#contact ul a li i*/
+
+
+/****************************************
+
+POP UP WINDOWS
+
+****************************************/
+
+
+/*			POP UP WINDOWS 			*/
+.show{
+	z-index: 150;
+}
+
+.content{
+	background: #f0eef3; /* WHITE */
+	width: 60%;
+	height: 75%;
+	margin: -19% 0 0 -30%;
+	top: 50%;
+	left: 50%;
+}
+
+.close{
+	margin-top: 1em;
+	margin-right: 1em;
+	font-size: 100%;
+}
+
+
+
+/*			IMAGES - THUMBS AND LARGE 			*/
+
+.thumbs{
+	bottom: 0;
+}
+
+/* FOR 5 thumbs*/
+.thumbs img{
+	width: 20%;
+	display: block;
+	opacity: 0.8;
+	height: 120px;
+	background-color: #718158;
+}
+
+/* for 8 thumbs */
+#flight_popUp .thumbs img{
+	width: 12.5%;
+	height: 60px;
+}
+
+#flight_popUp .thumbs{
+	z-index: 20;
+}
+
+img#img2_aboutUs.left,img#img3_aboutUs.left,img#img4_aboutUs.left{
+	padding: 0 1% 0 1%;
+}
+
+img#img1_aboutUs.left
+{
+	padding: 0 1% 0 0;
+}
+
+img#img5_aboutUs.left
+{
+	padding: 0 0 0 1%;
+}
+
+/* FLIGHT PACKAGES THUMB LABELS*/
+#flight_popUp .thumbs ul li, #plane_popUp .thumbs ul li, #about_popUp .thumbs ul li{
+	display: inline-block;
+	text-align: center;
+}
+
+#about_popUp .thumbs ul li{
+	width: 19.5%;
+}
+
+#flight_popUp .thumbs ul li{
+	width: 12%;
+}
+
+#plane_popUp .thumbs ul li{
+	width: 16.2%;
+	padding: 0 1% 0 1%;
+}
+
+/* for 6 thumbs */
+#plane_popUp .thumbs img{
+	width: 16.6666%;
+	height: 90px;
+
+}
+
+.mainPhoto{
+	width: 50%;
+	overflow: hidden;
+}
+
+/* FLIGHT PACAGES MAIN DISPLAY PHOTO */
+#mainPhoto_flight img{
+	left: -40%;
+}
+
+/* GALLERY MAIN DISPLAY PHOTO */
+#mainPhoto_gallery{
+	width: 100%;
+	height: 100%;
+}
+
+#mainPhoto_gallery img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* MAIN INFO FOR POP UP WINDOWS */
+.mainInfo{
+	width: 40%;
+	margin-top: 7%;
+	left: 55%;
+}
+
+/* GALLERY THUMBS */
+#gallery_popUp .mainInfo{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+
+#gallery_popUp .mainInfo img{
+	width: 7.142%;
+	opacity: 0.8;
+	height: 75px;
+}
+
+/* FORM STYLING  - FLIGHT PACKAGES QUESTION FORM */
+.mainInfo form label{
+	margin-right: 0.5em;
+	width: 6em;
+}
+
+.mainInfo #comments{
+	margin-left: 7.75em;
+	margin-top: 0.25em;
+}
+
+/* for text area label on the form*/
+.aligntop{
+	vertical-align: top;
+}
+
+
+
+/*			FORM 			*/
+
+
+#booking_popUp .content{
+	position: relative;
+	height: auto;
+	min-height: 70%;
+	overflow: visible;
+}
+
+#form{
+	width: 90%;
+	height: auto;
+	margin: -26.5% 0 0 -45%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+#form2{
+	width: 90%;
+	height: auto;
+	margin: -2% 0 0 -45%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
+fieldset, .submitTrue, .submit{
+	margin-left: 3em;
+}
+
+fieldset{
+	margin-bottom: 0.25em;
+	border-left: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+legend{
+	padding: 0 0.25em 0 0.5em;
+}
+
+label{
+	text-align: right;
+	margin-right: 0.5em;
+	width: 10em;
+	display: inline-block;
+}
+
+label[for='morning'], label[for='midday'], label[for='afternoon']{
+	width: 6em;
+}
+
+label[for='customized']{
+	width: 8em;
+}
+
+label[for='agree']
+{
+	display: inline;
+
+}
+
+select#location,  input#quantity
+{
+	width: 137px;
+}
+
+/*input, .mainInfo textarea{
+	padding: 0.2em
+}
+
+input[type="number"]{
+	width: 4em;
+}
+
+.formOpt{
+	margin-bottom: 0.5em;
+}
+
+/* VALIDATION STYLES */
+
+/* submit button*/
+.submit, .submitTrue, #submit-button {
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+	text-align: center;
+	border: none;
+	padding: 0.5em 1em;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  position: relative;
+}
+
+button, html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+
+/****************************************
+
+FORM VALIDATION
+
+****************************************/
+body {
+	font: 16px/1.5 sans-serif;
+	background-color: #ccc;
+}
+
+#container { 
+	width: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.form-group {
+	margin: 14px 0;
+	position: relative;
+}
+
+.form-group input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
+.form-group select {
+	font-size: 1em;
+	padding: .5em;
+	/*background-color: #fff;*/
+}
+
+.form-group textarea {
+	font-size: 1.2em;
+}
+
+.form-group2 textarea {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form-group 
+    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
+.form-group textarea,
+.form-group select { 
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px inset #999;
+}
+
+.form-group 
+    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]).invalid,
+.form-group textarea.invalid,
+.form-group select.invalid {
+	border: 1px inset #c00;
+	color: #c00;
+	background-color: #fcc;
+}
+
+.danger {
+	background-color: #fcc;
+	color: #c00;
+	font-size: 0.8em;
+	padding: 0 .5em;
+	border-radius: 3px;
+}
+
+.form-group .danger {
+	display: block;
+	position: absolute;
+	top: 3px;
+	right: 0;
+}
+
+
+div#form.cf div.left, div#form.cf div.right
+{
+	width: 47%;
+}
+div#form.cf div.right
+{
+	margin-right: 2%;
+}
+
+select#location, input#quantity
+{
+	width: 100%;
+}
+
+input#submit-button.submit.left.cf
+{
+	left:35%;
+	text-align: center; 
+	margin-top: 0;
+}
+
+.form-group2
+{
+	padding: 2px;
+}
+
+input#firstname, input#email, textarea#message
+{
+	padding: 2px;
+}
